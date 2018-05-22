@@ -6,14 +6,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
-         MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+         MatListModule, MatGridListModule, MatCardModule, MatMenuModule,
+         MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import {Route, RouterModule} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TalksComponent } from './talks/talks.component';
 
 const appRoutes: Route[] = [
   { path: '', component: HomeComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'talks', component: TalksComponent }
 ];
 
 @NgModule({
@@ -21,7 +24,8 @@ const appRoutes: Route[] = [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    TalksComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,10 @@ const appRoutes: Route[] = [
     RouterModule.forRoot(appRoutes),
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
