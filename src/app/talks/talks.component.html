@@ -15,6 +15,16 @@
         <mat-cell *matCellDef="let row">{{row.name}}</mat-cell>
       </ng-container>
 
+      <!-- Speakers Column -->
+      <ng-container matColumnDef="speakers">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Speaker(s)</mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <ng-container *ngFor="let speaker of row.speakers">
+            {{speaker.name}}<br/>
+          </ng-container>
+        </mat-cell>
+      </ng-container>
+
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>

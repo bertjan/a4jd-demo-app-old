@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import {Route, RouterModule} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TalksComponent } from './talks/talks.component';
+import {HttpClientModule} from '@angular/common/http';
+import {TalksService} from './talks/talks.service';
 
 const appRoutes: Route[] = [
   { path: '', component: HomeComponent },
@@ -42,9 +44,10 @@ const appRoutes: Route[] = [
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [TalksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
