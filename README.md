@@ -25,3 +25,65 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+## Steps to recreate this app
+`npm install -g @angular/cli` 
+
+`ng new demo-app`
+
+`cd demo-app`  
+`idea .`
+
+Edit gitignore  
+Look at project structure
+
+`ng serve`
+
+Open app at `http://localhost:4200`
+
+Test/lint app:  
+`ng test`  
+`ng e2e`  
+`ng lint`
+
+Add Angular material:  
+`ng add @angular/material`
+`npm add @angular/cdk@latest`
+
+Generate navigation component: 
+`ng generate @angular/material:material-nav --name navigation`
+
+Cleanup navigation component a bit
+
+Generate home component:  
+`ng generate component home`
+Move home screen to home component
+
+Add routing
+Change navigation links to [routerLink]'s
+
+Edit app component: add container div, height 100vh
+
+Generate dashboard/grid:  
+`ng generate @angular/material:material-dashboard --name dashboard`
+
+Add dashboard to routes
+
+Generate table:  
+`ng generate @angular/material:material-table --name talks`
+
+Start backend (https://github.com/bertjan/a4jd-demo-backend)
+
+Generate service:  
+`ng generate service talks/talks`
+
+Update talks component: use service to fetch data from backend 
+
+Create production build:  
+`ng build --aot --prod` 
+
+Navigate to directory `dist/demo-app` 
+Start production build in nginx:   
+`docker run --mount type=bind,source="$(pwd)",target=/usr/share/nginx/html -p 80:80 nginx`
