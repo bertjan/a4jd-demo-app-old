@@ -1,4 +1,4 @@
-# A4jdDemoApp
+# Angular for Java developers - demo application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
@@ -29,10 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Steps to recreate this app
+Install Angular CLI:
 `npm install -g @angular/cli` 
 
-`ng new demo-app`
-
+Generate new app, open in IDE:  
+`ng new demo-app`  
 `cd demo-app`  
 `idea .`
 
@@ -52,19 +53,19 @@ Add Angular material:
 `ng add @angular/material`
 `npm add @angular/cdk@latest`
 
-Generate navigation component: 
+Generate navigation component:  
 `ng generate @angular/material:material-nav --name navigation`
 
 Cleanup navigation component a bit
 
 Generate home component:  
 `ng generate component home`
-Move home screen to home component
-
-Add routing
-Change navigation links to [routerLink]'s
+Move home screen to home component  
 
 Edit app component: add container div, height 100vh
+
+Add routing  
+Change navigation links to [routerLink]'s  
 
 Generate dashboard/grid:  
 `ng generate @angular/material:material-dashboard --name dashboard`
