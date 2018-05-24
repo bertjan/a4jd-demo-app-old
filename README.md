@@ -50,7 +50,7 @@ Test/lint app:
 `ng lint`
 
 Add Angular material:  
-`ng add @angular/material`
+`ng add @angular/material`  
 `npm add @angular/cdk@latest`
 
 Generate navigation component:  
@@ -59,7 +59,7 @@ Generate navigation component:
 Cleanup navigation component a bit
 
 Generate home component:  
-`ng generate component home`
+`ng generate component home`  
 Move home screen to home component  
 
 Edit app component: add container div, height 100vh
