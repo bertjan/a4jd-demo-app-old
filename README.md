@@ -60,6 +60,7 @@ Cleanup navigation component a bit
 
 Generate home component:  
 `ng generate component home`  
+    
 Move home screen to home component  
 
 Edit app component: add container div, height 100vh
