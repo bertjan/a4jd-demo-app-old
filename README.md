@@ -66,6 +66,7 @@ Generate home component:
 `ng generate component home`  
     
 Move home screen to home component  
+Add home component inside `mat-sidenav-content` of navigation comoponent
 
 Edit app component: add container div, height 100vh
 
