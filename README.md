@@ -53,6 +53,10 @@ Add Angular material:
 `ng add @angular/material`  
 `npm add @angular/cdk@latest`
 
+Note: material schematics are broken in material 6.3.0 - instead try:
+`ng add @angular/material@6.2.1`
+`npm add @angular/cdk@6.2.1`
+
 Generate navigation component:  
 `ng generate @angular/material:material-nav --name navigation`
 
