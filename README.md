@@ -91,6 +91,6 @@ Update talks component: use service to fetch data from backend
 Create production build:  
 `ng build --aot --prod` 
 
-Navigate to directory `dist/demo-app` 
+Navigate to directory `dist/demo-app`  
 Start production build in nginx:   
 `docker run --mount type=bind,source="$(pwd)",target=/usr/share/nginx/html -p 80:80 nginx`
