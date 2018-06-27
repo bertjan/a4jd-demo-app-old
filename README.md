@@ -71,13 +71,13 @@ Add home component inside `mat-sidenav-content` of navigation comoponent
 Edit app component: add container div, height 100vh
 
 Add routing  
-Change navigation links to [routerLink]'s  
 
 Generate dashboard/grid:  
 `ng generate @angular/material:material-dashboard --name dashboard`
-
-Add dashboard to routes
-
+  
+Change navigation links to [routerLink]'s    
+Add dashboard to routes. 
+  
 Generate table:  
 `ng generate @angular/material:material-table --name talks`
 
